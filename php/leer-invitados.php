@@ -4,7 +4,7 @@ error_reporting(0);
 
 header('Content-type: application/json; charset=utf-8');
 
-$conn = new mysqli('us-cdbr-east-05.cleardb.net', 'beab1dc296be45', '8b23ea7f', 'heroku_0ed2c9f686450fa');
+$conn = new mysqli('sql303.epizy.com', 'epiz_30791266', 'IW4ZLhnRZy', 'epiz_30791266_invitados_boda');
 
 if ($conn->connect_errno) {
     $respuesta = ['error' => true];
