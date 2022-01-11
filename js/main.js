@@ -93,7 +93,7 @@ const familiaOrIndividual = (e) => {
     }
 }
 
-// Crea los los Labels y CheckBoxes de los invitados cuando se selecciona Individualmente
+// Crea los los Labels y CheckBoxes de los invitados cuando se selecciona Indiv
 const invitadosCheckbox = () => {    
     for (let i = 0; i < invitadosFiltrados.length; i++) {
         if (invitadosFiltrados[i].codigo_familia == codeFamilia) {
@@ -225,13 +225,29 @@ const mensajeDespedida = () => {
         if (invitadosFiltrados.length > 1) {
             msgDespedida.innerHTML += ('<p>¡Muchas gracias Familia:</p>');
             msgDespedida.innerHTML += (`<h2 class="msgDespedida-h2">${invitadosFiltrados[0].apellido}</h2>`);
+            msgDespedida.innerHTML += ('<p>Por confirmar tu asistencia a nuestra Boda!</p>');
+            msgDespedida.innerHTML += ('<p>¡Te esperamos el dia 10 de Septiembre!</p>');
         } else if (invitadosFiltrados.length == 1) {
             // Si es confirmacion Individual
             msgDespedida.innerHTML += ('<p>¡Muchas gracias:</p>');
             msgDespedida.innerHTML += (`<h2 class="msgDespedida-h2">${invitadosFiltrados[0].nombre} ${invitadosFiltrados[0].apellido}</h2>`);
+            msgDespedida.innerHTML += ('<p>Por confirmar su asistencia a nuestra Boda!</p>');
+            msgDespedida.innerHTML += ('<p>¡Te esperamos el dia 10 de Septiembre!</p>');
         }
     } else {
-        if (invitadosFiltrados.length == 1) {
+        if (invitadosFiltrados.length > 1) {
+            if (invitadosConfirmados.some(({ confirm_status }) => confirm_status == 'Confirmado')) {
+                msgDespedida.innerHTML += ('<p>¡Muchas gracias Familia:</p>');
+                msgDespedida.innerHTML += (`<h2 class="msgDespedida-h2">${invitadosFiltrados[0].apellido}</h2>`);
+                msgDespedida.innerHTML += ('<p>Por confirmar tu asistencia a nuestra Boda!</p>');
+                msgDespedida.innerHTML += ('<p>¡Te esperamos el dia 10 de Septiembre!</p>');
+            } else {
+                msgDespedida.innerHTML += ('<p>¡Lamentamos mucho Familia:</p>');
+                msgDespedida.innerHTML += (`<h2 class="msgDespedida-h2">${invitadosFiltrados[0].apellido}</h2>`);
+                msgDespedida.innerHTML += ('<p>Que no pueda acompañarnos a nuestra Boda!</p>');
+            }
+
+        } else if (invitadosFiltrados.length == 1) {
             // Si es desconfirmacion Individual
             msgDespedida.innerHTML += ('<p>¡Lamentamos mucho:</p>');
             msgDespedida.innerHTML += (`<h2 class="msgDespedida-h2">${invitadosFiltrados[0].nombre} ${invitadosFiltrados[0].apellido}</h2>`);
