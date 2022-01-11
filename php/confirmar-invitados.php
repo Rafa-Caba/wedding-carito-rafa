@@ -6,7 +6,7 @@ header('Content-type: application/json; charset=utf-8');
 $id = $_POST['id'];
 $confirm_status = $_POST['confirm_status'];
 
-$conn = new mysqli('localhost', 'root', '', 'invitaciones_boda');
+$conn = new mysqli('us-cdbr-east-05.cleardb.net', 'beab1dc296be45', '8b23ea7f', 'heroku_0ed2c9f686450fa');
 $conn->set_charset('utf8');
 
 if ($conn->connect_errno) {
