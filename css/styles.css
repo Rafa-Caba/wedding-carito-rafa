@@ -1,0 +1,361 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/new-photo-dos-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 16px;
+    text-shadow: 3px 3px 2px black;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+	max-width: 1280px;
+	margin: auto;
+    width: 90%;
+}
+
+header {
+    align-items: center;
+    background-color: rgba(161, 104, 253, 0.657);
+    box-shadow: 0.4em 0.4em 10px rgb(136, 66, 248), -0.4em -0.4em 10px rgb(136, 66, 248); 
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 6em;
+    margin: 2em;
+    width: 90%;
+}
+
+header h1 {
+	font-size: 3em;
+	line-height: 2em;
+	font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+.contendor-saludo {
+    background-color: rgba(161, 104, 253, 0.657);
+    box-shadow: 0.4em 0.4em 10px rgb(136, 66, 248), -0.4em -0.4em 10px rgb(136, 66, 248); 
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 39em;
+    height: 18em;
+	margin: auto;
+    font-size: 1.2em;
+    padding: 0.8em;
+    display: none;
+}
+
+.contenedor-btn-inicio {
+    display: flex;
+    justify-content: center;
+}
+
+.contendor-saludo .btn {
+    margin: 0;
+    background: rgb(197, 127, 250);
+	font-size: 1.5em;
+    border-radius: 10px;
+    border: rgb(212, 158, 253);
+    padding: 0.8em 1.5em;
+    margin: auto;
+    cursor: pointer;
+}
+
+.contendor-saludo .btn:hover {
+    background: rgb(186, 106, 248);
+    cursor: pointer;
+}
+
+.contendor-saludo .contenedor-saludo_titulo {
+    margin: 0;
+    padding: 1em 0.5em;
+    font-size: 2.2em;
+    width: 80%;
+    text-align: center;
+}
+
+.contenedor-confirmacion {
+    background-color: rgba(161, 104, 253, 0.657);
+    box-shadow: 0.3em 0.3em 8px rgb(136, 66, 248), -0.3em -0.3em 8px rgb(136, 66, 248); 
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 46em;
+	margin: auto;
+    padding-bottom: 1em;
+    display: none;
+    text-align: center;
+}
+
+.msg-familia {
+    font-size: 2.6em;
+    text-align: center;
+    padding: 0.5em 0.2em 1em 0.2em;
+    margin: 0;
+}
+
+.msg-indi-fam {
+    font-size: 2em;
+    padding: 0.5em 0.2em 1em 0.2em;
+    margin: 0;
+}
+
+.radio-label {
+    font-size: 1.5em;
+}
+
+.contanedor-confirmacion_opciones {
+    width: 42em;
+	margin: auto;
+	display: flex;
+    padding: 1em 1em 2em 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-confirmacion_opciones_form {
+    width: 42em;
+	margin: auto;
+	display: flex;
+    padding: 1em 1em 2em 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario-opciones {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 42em;
+    gap: 0.8em;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmacion_opciones-individual label {
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.confirmacion_opciones-familia label {
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.form-radio {
+    cursor: pointer;
+    padding: 1em;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.formulario-opciones_btn {
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 0.8em;
+    width: 50%;
+    padding: 10px 5px;
+    background: rgb(197, 127, 250);
+    border-radius: 10px;
+    border: rgb(212, 158, 253);
+}
+
+.formulario-opciones_btn:hover {
+    background: rgb(186, 106, 248);
+}
+
+.contenedor-confirmacion_decision {
+    background-color: rgba(161, 104, 253, 0.657);
+    box-shadow: 0.3em 0.3em 8px rgb(136, 66, 248), -0.3em -0.3em 8px rgb(136, 66, 248); 
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 29em;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0.5em;
+    display: none;
+    text-align: center;
+}
+
+.formulario-decision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmacion-familiar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    width: 100%;
+    padding: 1em 8em 0 8em;
+}
+
+.confirmacion-individual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    padding: 1em 1em 0 1em;
+}
+
+#miembros_familia-title {
+    font-size: 1.1em;
+    padding-bottom: 1em;
+}
+
+div#miembros_familia {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: flex-start;
+    gap: 0.3em;
+}
+
+.miembros-Div {
+    gap: 0.3em;
+    display: flex;
+}
+
+.checkbox-individual {
+    cursor: pointer;
+    padding: 1em;
+    margin: auto;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.checkbox-individual-label {
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 0.5em;
+    text-align: left;
+}
+
+.confirmacion-decision-btn {
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 0.8em;
+    margin-bottom: 1em;
+    width: 50%;
+    padding: 10px 5px;
+    background: rgb(197, 127, 250);
+    border-radius: 10px;
+    border: rgb(212, 158, 253);
+}
+
+.confirmacion-decision-btn:hover {
+    background: rgb(186, 106, 248);
+}
+
+.msg-despedida {
+    background-color: rgba(161, 104, 253, 0.657);
+    box-shadow: 0.3em 0.3em 8px rgb(136, 66, 248), -0.3em -0.3em 8px rgb(136, 66, 248);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 19em;
+    padding: 1.5em 1em;
+    margin: auto;
+    margin-top: 1em;
+    font-size: 2.5em;
+    display: none;
+}
+
+.msgDespedida-h2 {
+    row-gap: 1em;
+    padding: 0.5em 0.2em;
+}
+
+div#msg-despedida {
+    text-align: center;
+    gap: 0.3em;
+    font-size: 2.2em;
+}
+
+.active {
+	display: block;
+    display: flex;
+}
+
+.loader {
+	margin: auto;
+	display: none;
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+}
+
+.loader.active {
+	display: block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 889px) {
+    body {
+        font-size: 12px;
+        background-position: unset;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-position: unset;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 7px;
+    }
+}

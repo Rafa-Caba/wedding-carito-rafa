@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="css/images/icono-boda.jpg" type="image/jpg">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Rafa & Caro's Wedding</title>
+    </head>
+    <body>
+        <div class="contenedor">
+            <header>
+                <div class="titulo">
+                    <h1>Carolina & Rafael</h1>
+                </div>
+            </header>
+
+            <main>
+                 <!-- Este DIV es el del Saludo principal y Video Explicacion -->
+                <div class="contendor-saludo" id="contendor-saludo">
+                    <p class="contenedor-saludo_titulo" id="contenedor-saludo_titulo">
+                        Bienvenido a nuestro Registro de Invitados
+                    </p>
+                    <div class="contenedor-btn-inicio" id="contenedor-btn-inicio">
+                        <button class="btn" id="btn-inicio">Iniciar registro</button>
+                    </div>
+                </div>
+
+                <!-- Este es el DIV donde se confirmara si sera la Familia completa o Individual -->
+                <div class="contenedor-confirmacion" id="contenedor-confirmacion">
+                    <p id="msg-familia" class="msg-familia"></p>
+                    <p id="msg-indi-fam" class="msg-indi-fam">Por favor confirma: Toda la familia o Individualmente</p>
+
+                    <div class="contanedor-confirmacion_opciones">
+                        
+                        <form action="" class="formulario-opciones" id="formulario-opciones">
+
+                            <input type="radio" class="form-radio" name="option" id="familia_completa" value="Familia completa">
+                            <label id="familia-completa" for="familia_completa" class="radio-label">Familia completa</label>
+
+                            <input type="radio" class="form-radio" name="option" id="individual" value="Individualmente">
+                            <label id="individual" for="individual" class="radio-label">Individualmente</label>
+
+                            <input type="submit" class="formulario-opciones_btn" id="formulario_opciones_btn" value="Continuar">
+                        </form>
+                    </div>
+
+                    <!-- Aqui se confirma a los invitados ya sea por familia o individual -->
+                    <div class="contenedor-confirmacion_decision" id="contenedor-confirmacion_decision">
+                        <form action="" class="formulario-decision" id="formulario_decision">
+                            <div class="confirmacion-familiar" id="confirmacion_familiar">
+                                <p>Confirma tu Familia</p>
+                            </div>
+        
+                            <div class="confirmacion-individual" id="confirmacion_individual">
+                                <p id="miembros_familia-title">
+                                    Por favor selecciona a quienes seran parte de nuestra Boda
+                                </p>
+                                <div class="contenedor-miembros-familia" id="miembros_familia"></div>
+                            </div>
+        
+                            <input type="submit" class="confirmacion-decision-btn" id="confirmacion_btn" value="Confirmar">
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Este es el DIV de mensaje de salida al terminar el registro -->
+                <div class="msg-despedida" id="msg-despedida"></div>
+
+                <div class="loader" id="loader"></div>
+            </main>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
